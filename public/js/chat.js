@@ -33,17 +33,18 @@ new Vue ({
         socket.emit('createMessage', {
         from: 'Alex',
         text: this.message
-        }, (data) => {
-          // console.log('createMessage', data);
+        }, () => {
+          this.message = '';
         })
       }
-      this.message = '';
     }
 
   },
 
   created () {
     socket.on('newMessage', (message) => {
+      const formattedTime = moment(message.createdAt).format('h:mm a');
+      message.formattedTime = formattedTime;
       console.log(message);
       this.messages.push(message);
     });
