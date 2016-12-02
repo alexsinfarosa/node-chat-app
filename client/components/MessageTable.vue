@@ -3,7 +3,7 @@
     <div class="column is-6 is-offset-3">
       <article v-for="message in messages" class="media">
         <figure class="media-left">
-          <p class="image is-64x64">
+          <p class="image is-48x48">
             <img class="my-image" src="../../dist/alex.jpg">
           </p>
         </figure>
