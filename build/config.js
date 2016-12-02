@@ -22,5 +22,5 @@ module.exports = {
     }),
     require('postcss-nested')
   ],
-  cssModules: false,
+  cssModules: false
 }

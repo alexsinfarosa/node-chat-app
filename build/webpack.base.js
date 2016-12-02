@@ -1,6 +1,6 @@
 'use strict'
 const path = require('path')
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const config = require('./config')
 const _ = require('./utils')
@@ -54,7 +54,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: config.title,
-      template: __dirname + '/index.html',
+      template: path.join(__dirname, '/index.html'),
       filename: _.outputIndexPath
     })
   ],

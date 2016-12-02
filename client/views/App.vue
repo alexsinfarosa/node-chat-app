@@ -1,9 +1,24 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-  </div>
-</template>
 
+      <section class="hero is-fullheight">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+
+            <router-view></router-view>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+</template>
+<script>
+export default {
+  name: 'App'
+}
+
+</script>
 <style>
 
 </style>
