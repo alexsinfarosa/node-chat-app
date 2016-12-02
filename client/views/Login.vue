@@ -1,23 +1,29 @@
 <template lang="html">
-  <div>
-    <transition
-      appear
-      appear-class="ciccio"
-      appear-active-class="animated fadeInLeft"
-    >
-      <logo></logo>
-    </transition>
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container has-text-centered">
 
-    <loginForm></loginForm>
-    <br>
+        <transition
+          appear
+          appear-class="ciccio"
+          appear-active-class="animated fadeInLeft"
+        >
+          <logo></logo>
+        </transition>
 
-    <router-link
-      to="/room/:id"
-      class="button is-success is-outlined is-large"
-    >
-      LOG IN
-    </router-link>
-</div>
+        <loginForm></loginForm>
+        <br>
+
+        <router-link
+          to="/room/:id"
+          class="button is-success is-outlined is-large"
+        >
+          LOG IN
+        </router-link>
+
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>

@@ -2,23 +2,21 @@
   <div class="columns">
     <div class="column is-4 is-offset-4">
 
-      <p class="control has-icon">
-        <input class="input" type="email" placeholder="Email">
-        <i class="fa fa-envelope"></i>
+      <p class="control">
+        <input class="input" type="text" placeholder="Name">
       </p>
-      <p class="control has-icon">
-        <input class="input" type="password" placeholder="Password">
-        <i class="fa fa-lock"></i>
+      <p class="control">
+        <input class="input" type="text" placeholder="Room Name">
       </p>
 
     </div>
-    
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'loginForm'
+  name: 'LoginForm'
 }
 </script>
 
